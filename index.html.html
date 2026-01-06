@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SilverCare Haven | Elderly Care Home</ near Nizari Jamat Khana>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        /* Background Image with Blur */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b") no-repeat center center/cover;
+            filter: blur(6px);
+            z-index: -1;
+        }
+
+        /* Overlay for better readability */
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.85);
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #2e8b8b;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: #2e8b8b;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            color: #333;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 40px;
+            background-color: #f7fafa;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2e8b8b;
+            font-size: 32px;
+        }
+
+        .service-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #2e8b8b;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2e8b8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+
+    <!-- Header -->
+    <header>
+        <h1>SilverCare Haven</h1>
+        <nav>
+            <ul>
+                <li>Elderly Care</li>
+                <li>Physio Therapy</li>
+                <li>Indoor Activities</li>
+                <li>Outdoor Activities</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Compassionate Care for Golden Years</h2>
+        <p>
+            At SilverCare Haven, we provide a safe, healthy, and joyful environment for seniors.
+            Our mission is to enhance quality of life through professional healthcare services,
+            emotional support, and engaging activities.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-box">
+
+            <div class="card">
+                <h3>Elderly Care</h3>
+                <p>
+                    24/7 medical supervision, personal assistance, and compassionate caregiving
+                    tailored to individual needs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Physio Therapy</h3>
+                <p>
+                    Professional physiotherapy sessions to improve mobility, strength,
+                    and overall physical well-being.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Indoor Activities</h3>
+                <p>
+                    Yoga, games, arts & crafts, music therapy, and social gatherings
+                    to keep minds active and happy.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Outdoor Activities</h3>
+                <p>
+                    Garden walks, light exercises, community outings, and fresh-air activities
+                    for holistic wellness.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SilverCare Haven | Caring for Life with Dignity</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
